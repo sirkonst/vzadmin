@@ -26,8 +26,8 @@ _menu_enter() {
     IFS='\'
 
     $DG --clear --backtitle "OpenVZ Control Panel" --title "List of running VPS" \
-        --ok-label "Select" --cancel-label "Exit" \
-        --menu "Select VPS:" 0 0 0 \
+        --ok-label "Enter" --cancel-label "Exit" \
+        --menu "Select VPS for enter:" 0 0 0 \
         "" "Display all VPS ->" $CTLIST 2> $tempfile
 
     retval=$?
